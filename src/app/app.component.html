@@ -1,20 +1,190 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">{{ title }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another Action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-12 pb-20">
+            <div class="month">
+              <ul>
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li class=" list-group-item active">July<br><span stype="font-size:18px">2018</span></li>
+              </ul>
+            </div>
+            <ul class="weekdays">
+              <li>Su</li>
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+            </ul>
+            <ul class="days">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li><span class="active">10</span></li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+           <li>31</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+              <ul class="list-group pb-20">
+                <li class="list-group-item active"><h5>Class</h5></li>
+                <table class="table table-bordered table-striped table-hover">
+                  <tr>
+                    <th>Days</th>
+                    <th>Time</th>
+                    <!-- <th>Batch</th> -->
+                    <th>Module</th>
+                    <!-- <th>Topic</th> -->
+                    <th>Trainer</th>
+                  </tr>
+                  <tr>
+                    <td>Monday, Wednesday, Friday</td>
+                    <td>7 pm - 10 pm</td>
+                    <!-- <td>6</td> -->
+                    <td>2</td>
+                    <!-- <td>Rest-Api</td> -->
+                    <td>Muzaffar</td>
+                  </tr>
+                  <tr>
+                    <td>Monday, Wednesday, Friday</td>
+                    <td>7 pm - 10 pm</td>
+                    <!-- <td>8</td> -->
+                    <td>1</td>
+                    <!-- <td>Bootstrap</td> -->
+                    <td>Ming</td>
+                  </tr>
+                  <tr>
+                    <td>Monday, Wednesday, Friday</td>
+                    <td>7 pm - 10 pm</td>
+                    <!-- <td>10</td> -->
+                    <td>3</td>
+                    <!-- <td>Angular</td> -->
+                    <td>Muzani</td>
+                  </tr>
+                </table>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-20">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="list-group pb-20">
+                        <li class="list-group-item active"><h5>Add Class</h5></li>
+                        <li>
+                            <form>
+                                <div class="form-group">
+                                    <label for="daysOfWeek">Days:</label>
+                                    <input type="text" class="form-control" id="daysOfWeek" placeholder="Enter days of the week"><br>
+                                  </div>
+                              <div class="form-group">
+                                <label for="startTime">Start Time:</label>
+                                <input type="text" class="form-control" id="startTime" placeholder="Enter start time"><br>
+                              </div>
+                              <div class="form-group">
+                                  <label for="endTime">End Time:</label>
+                                  <input type="text" class="form-control" id="endTime" placeholder="Enter end time"><br>
+                              </div>
+                              <!-- <div class="form-group">
+                                  <label for="batchNumber">Batch:</label>
+                                  <input type="text" class="form-control" id="batchNumber" placeholder="Enter batch number"><br>
+                              </div> -->
+                              <div class="form-group">
+                                  <label for="moduleNumber">Module:</label>
+                                  <input type="text" class="form-control" id="moduleNumber" placeholder="Enter module number"><br>
+                              </div>
+                              <!-- <div class="form-group">
+                                  <label for="topicName">Topic:</label>
+                                  <input type="text" class="form-control" id="topicName" placeholder="Enter topic name"><br>
+                              </div> -->
+                              <div class="form-group">
+                                  <label for="trainerName">Trainer:</label>
+                                  <input type="text" class="form-control" id="trainerName" placeholder="Enter trainer name"><br>
+                              </div>
+                              <button type="submit" class= "btn btn-primary"> Submit</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+      </div>
+  </div>
+
 
